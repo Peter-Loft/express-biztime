@@ -89,11 +89,12 @@ router.delete("/:code", async function (req, res, next) {
   const result = await db.query(
     `DELETE FROM companies WHERE code = $1 RETURNING code`,
     [code],
-    );
-    const company = result.rows[0];
-    if (!company) throw new NotFoundError(`No matching company at code: ${code}`);
+  );
+  
+  const company = result.rows[0];
+  if (!company) throw new NotFoundError(`No matching company at code: ${code}`);
 
-    return res.json({message: "Deleted"});
+  return res.json({ message: "Deleted" });
 });
 
 module.exports = router;
