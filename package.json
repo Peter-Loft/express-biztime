@@ -1,7 +1,6 @@
 {
   "name": "express-biztime",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,15 @@
   "dependencies": {
     "express": "^4.17.3",
     "pg": "^8.7.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peter-Loft/express-biztime.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Peter-Loft/express-biztime/issues"
+  },
+  "homepage": "https://github.com/Peter-Loft/express-biztime#readme",
+  "description": ""
 }
