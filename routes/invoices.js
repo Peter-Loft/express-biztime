@@ -25,7 +25,7 @@ router.get("/", async function (req, res, next) {
  *  company: {code, name, description}}
  */
 router.get("/:id", async function (req, res, next) {
-  const invoiceId = req.params.code;
+  const invoiceId = req.params.id;
 
   const invoiceQuery = await db.query(`
     SELECT id, amt, paid, add_date, paid_date, comp_code
